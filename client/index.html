@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Agreement Confirmation</title>
+  </head>
+  <body>
+    <script type="module" src="index.js"></script>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h3>Connection Status</h3>
+        </div>
+        <div class="card-body">
+          <p id="connectionStatus">Disconnected</p>
+          <button class="btn btn-success" type="submit" id="connectButton" >connectButtont</button>
+        </div>
+      </div>
+    
+      <div> 
+        <div class="card">
+          <div class="card-header">
+            <h3>Set Content</h3>
+          </div>
+          <div class="card-body">
+            <input class="form-control" placeholder="Insert Agreement content here..." id="agreementContent">  
+            <button class="btn btn-success" type="submit" id="submitAgreement" >Set content</button>
+          </div>
+        </div>  
+      </div>
+    <div class="row">
+      <div class="col-lg-6 mb-4">
+        <div class="card">
+            <div class="card-header">
+              <h3>Information on the Blockchain</h3>
+            </div>
+            <div class="card-body">
+              <p id="contractAddress">Document Address: </p>
+              <p id="contractContent">Document Hashed Content: </p>
+              <p id="contractStatus">Document Status: </p>
+              <button class="btn btn-success" type="submit" id="getContractStatus">Update Document Status</button>
+            </div>
+        </div>
+      </div>
+    
+      <div class="col-lg-6 mb-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Contract Verification</h3>
+          </div>
+          <div class="card-body">
+            <button class="btn btn-success" type="submit" id="verifyDocument" >Verify Document</button>
+            <p id="verificationMessage"><em>Your Document has not been verified.</em></p>
+            <button class="btn btn-success" type="submit" id="signContract">Approve & Sign</button>
+            <button class="btn btn-danger" type="submit" id="cancelContract">Cancel</button>
+            <p id="signerName"></p>
+            <p id="signerAddress"></p>
+            <p id="signerSignature"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"></script>
+  </body>
+</html>
